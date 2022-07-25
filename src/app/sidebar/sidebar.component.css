@@ -1,0 +1,35 @@
+.mat-list-item {
+  color: black;
+  width: 300px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100px;
+  animation-name: img;
+  transition: 0.5s;
+}
+img:hover {
+  max-width: 121.8px;
+}
+.right {
+   animation-name: pop;
+  animation-duration: 3s;
+  align-self: flex-start;
+}
+
+
+.left {
+ 
+  position: relative;
+  top: -20px;
+  align-self: flex-end;
+}
+@keyframes pop {
+  from{opacity: 0;}
+  to{opacity: 90;}
+}

@@ -1,0 +1,19 @@
+.right{
+    align-self: flex-end;
+    animation-name: pop;
+    animation-duration: 4s;
+}
+img{
+    max-width: 100px;
+    animation-name: img ;
+    transition: 0.5s;
+    
+  }
+  img:hover {
+    max-width: 123px;
+   
+  }
+  @keyframes pop {
+    from{opacity: 0;}
+    to{opacity: 100;}
+  }

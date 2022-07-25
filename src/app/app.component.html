@@ -1,0 +1,38 @@
+<div id="phone">
+  <h3>Welcome</h3>
+  <div >
+    <b style="text-align: center;"> Please Enter To desktop Mode to View Portfolio</b>
+    <br><br>
+    <ul>
+      <li>Launch the Chrome browser on Android.</li>
+      <li>Open any website that you want to view in desktop mode.</li>
+      <li>
+        Tap onvertical &nbsp; <span class="test"></span> 3 dots icon the menu
+        options.
+      </li>
+      <li>Select the checkbox against the Desktop site.</li>
+    </ul>
+  </div>
+</div>
+<div id="desktop">
+  <div
+    style="
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0px 3px 17px 2px rgba(131, 128, 128, 0.759);
+    "
+  >
+    <app-header></app-header>
+  </div>
+
+  <div>
+    <div style="display: flex">
+      <div style="flex: 0.2">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div id="effect" style="flex: 0.6"><router-outlet></router-outlet></div>
+      <div style="flex: 0.2"><app-skillsets></app-skillsets></div>
+    </div>
+  </div>
+</div>

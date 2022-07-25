@@ -1,0 +1,104 @@
+<!-- <style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(214, 229, 245, 0.52);
+  }
+</style> -->
+
+<header>
+  <h3 style="text-align: center">Studied From</h3>
+
+  <div>
+    <div  style="display: flex ;justify-content: space-between;">
+      <div>
+        <h3>Cloud Age Pune</h3>
+      </div>
+      <div>
+        <button mat-raised-button (click)="openBottomSheet(1)">Info</button>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <iframe
+        width="100%"
+        height="300px"
+        src="https://www.cloudage.co.in/about-us/"
+      >
+      </iframe>
+    </div>
+  </div>
+  <div>
+    <div style="display: flex;justify-content: space-between;">
+      <div>
+        <h3>Goverment Polytechnic pune</h3>
+      </div>
+      <div>
+        <button mat-raised-button (click)="openBottomSheet(2)">Info</button>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <iframe
+        width="100%"
+        height="300px"
+        src="http://192.169.226.38/~gpponline/gppweb/userindex.php"
+      >
+      </iframe>
+    </div>
+  </div>
+  <div>
+    <div style="display: flex;justify-content: space-between;">
+      <div>
+        <h3>Infinite grafix Technology</h3>
+      </div>
+      <div>
+        <button mat-raised-button (click)="openBottomSheet(3)">Info</button>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <iframe
+        width="100%"
+        height="300px"
+        src="https://infinitegraphixads.com/"
+      >
+      </iframe>
+    </div>
+  </div>
+
+</header>
+<footer
+  style="
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  "
+>
+  <h3>About Me</h3>
+  <b>
+    I Have Mathematical Achivements Regarding logical Thincking And problem
+    solving exams And because of Some Experienced Faculties I developed my Great
+    Knowledge of problem solving skills</b
+  >
+  <ng-container
+    ><br />
+    <b>
+      <h4>Career objective</h4>
+      To obtain a position that will allow me to utilize my technical skills and
+      willingness to learn and in making an organization successful.
+    </b></ng-container
+  >
+</footer>
