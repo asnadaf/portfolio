@@ -4,6 +4,7 @@ import {
   MatBottomSheetRef,
 } from '@angular/material/bottom-sheet';
 import { CloudageComponent } from '../cloudage/cloudage.component';
+import { CodevianComponent } from '../codevian/codevian.component';
 import { GppComponent } from '../gpp/gpp.component';
 import { HomeComponent } from '../home/home.component';
 import { IgtComponent } from '../igt/igt.component';
@@ -25,8 +26,10 @@ export class AboutComponent implements OnInit {
       this._bottomSheet.open(CloudageComponent);
     }else if(x==2){
       this._bottomSheet.open(GppComponent);
-    }else{
+    }else if(x==3){
       this._bottomSheet.open(IgtComponent);
+    }else{
+      this._bottomSheet.open(CodevianComponent);
     }
   }
 }

@@ -1,8 +1,34 @@
+<style>
+  
+  #span {
+    color: red;
+    font-size: large;
+    font-family: cursive;
+  }
+  #span::before {
+    content: "";
+    animation: anime infinite 4s;
+  }
+  @keyframes anime {
+    33% {
+      content: "AWS Admin";
+    }
+    66% {
+      content: "Web Development";
+    } 
+    100% {
+      content: "Big Data";
+    }
+  }
+</style>
+<!-- this is for 3 dots -->
 <div id="phone">
   <h3>Welcome</h3>
-  <div >
-    <b style="text-align: center;"> Please Enter To desktop Mode to View Portfolio</b>
-    <br><br>
+  <div>
+    <b style="text-align: center">
+      Please Enter To desktop Mode to View Portfolio</b
+    >
+    <br /><br />
     <ul>
       <li>Launch the Chrome browser on Android.</li>
       <li>Open any website that you want to view in desktop mode.</li>
@@ -19,20 +45,86 @@
     style="
       position: sticky;
       top: 0;
+      right: 0;
       z-index: 999;
-      box-shadow: 0px 3px 17px 2px rgba(131, 128, 128, 0.759);
+      /* box-shadow: 0px 3px 17px 2px rgba(131, 128, 128, 0.759); */
     "
   >
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
+    <nav
+      style="padding: 10px 65px; display: flex; justify-content: space-between"
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div>
+        <h3>Welcome</h3>
+      </div>
+      <div><b>HIRE ME FOR </b> &nbsp;<span id="span"></span></div>
+      <div>
+        <b>Resume</b
+        ><button class="btn">
+          <a href="../assets/afifahmad resume (3).pdf" download>
+            <i class="fa fa-download"></i
+          ></a>
+        </button>
+      </div>
+    </nav>
   </div>
 
   <div>
-    <div style="display: flex">
-      <div style="flex: 0.2">
-        <app-sidebar></app-sidebar>
+    <div style="display: flex; justify-content: space-between">
+      <div style="flex: 0.3; padding: 50px; background-color: #f7f7f7">
+        <div style="margin-bottom: 20px">
+          <app-sidebar></app-sidebar>
+        </div>
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Competency</mat-panel-title>
+              <mat-panel-description> </mat-panel-description>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> AWS</mat-panel-title>
+              <mat-panel-description> </mat-panel-description>
+            </mat-expansion-panel-header>
+            <!-- <ul class="list" style="display:flex; list-style: none;justify-content: space-between;">
+              <li ></li>
+            </ul> -->
+
+            <b> AWS Compute | Networking</b> (EC2, VPC .... )
+            <b>COLLECTION</b> Kinesis | SQS | Amazon MSK <b>STORAGE</b> S3 |
+            DynamoDB <br />
+            <b> PROCESSING </b> EMR | Glue | Lambda <br /><b> ANALYSIS </b>
+            Athena | Redshift | OpenSearch <br />
+            <b>VISUALIZATION </b> Quicksight <br /><b> SECUIRITY </b> KMS | VPC
+            Endpoints | Encryption ..
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Big Data </mat-panel-title>
+              <mat-panel-description> </mat-panel-description>
+            </mat-expansion-panel-header>
+            <b>Hadoop And Cloudera</b>
+            hadoop | Kafka | Yarn | Hive | spark | CM | Tablue | Sentry |
+            Kerberos ...
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Web Development</mat-panel-title>
+              <mat-panel-description> </mat-panel-description>
+            </mat-expansion-panel-header>
+            <b>Front End</b> Angular | HTML | CSS | Javascript | Bootstrap
+            <br />
+            <b>Backend</b> Node.js | Express
+            <br />
+            <b>Database</b> MongoDB | Firebase
+          </mat-expansion-panel>
+        </mat-accordion>
       </div>
-      <div id="effect" style="flex: 0.6"><router-outlet></router-outlet></div>
-      <div style="flex: 0.2"><app-skillsets></app-skillsets></div>
+      <div id="effect" style="flex: 0.7; padding: 100px">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>

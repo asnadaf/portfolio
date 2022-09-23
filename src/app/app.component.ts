@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'portfolio_afif';
   showFiller = false;
+  panelOpenState = false;
   giveVal(){
     console.log('hello every one')
   }
