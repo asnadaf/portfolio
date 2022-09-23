@@ -28,10 +28,11 @@ import { IgtComponent } from './igt/igt.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { CodevianComponent } from './codevian/codevian.component';
+import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, SidebarComponent, AboutComponent, NumberComponent, MainComponent, SkillsetsComponent, QuilificationComponent, CloudageComponent, GppComponent, IgtComponent, CodevianComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, SidebarComponent, AboutComponent, NumberComponent, MainComponent, SkillsetsComponent, QuilificationComponent, CloudageComponent, GppComponent, IgtComponent, CodevianComponent, ProjectComponent],
   imports: [
     MatBottomSheetModule,
     MdbCarouselModule,
