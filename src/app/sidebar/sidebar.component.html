@@ -1,22 +1,54 @@
-<mat-nav-list style="min-width: 250px">
-  <div class="icons">
-    <a mat-list-item routerLink="home"> <mat-icon>home</mat-icon>&nbsp; Home</a>
-    <a mat-list-item href="https://www.linkedin.com/in/afifahmad-nadaf-387095243" target="_blank">
-      <mat-icon>linkedin</mat-icon>&nbsp;LinkedIn </a
-    >
-    <a mat-list-item routerLink="table" (click)="openDialog()"
-      ><mat-icon>phone</mat-icon>&nbsp; Contact</a
-    >
-    <a mat-list-item routerLink="project">
-      &#8594;&nbsp; Projects</a
-    >
-    <a mat-list-item routerLink="about">
-      <mat-icon>face</mat-icon>&nbsp; About Me</a
-    >
+<style>
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: 20px;
+    justify-content: center;
+  }
+  .main{
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .main:hover {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+  }
+</style>
+<div style="color: white;">
+  <div>
+    <div class="main" style="display: flex">
+      <div class="sub1"><mat-icon>home</mat-icon></div>
+      <div class="sub2"><a routerLink="home">&nbsp; Home</a></div>
+    </div>
+    <div class="main" style="display: flex">
+      <div class="sub1"><mat-icon>linkedin</mat-icon></div>
+      <div class="sub2">
+        <a
+          href="https://www.linkedin.com/in/afifahmad-nadaf-387095243"
+          target="_blank"
+          >&nbsp; LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="main" style="display: flex">
+      <div class="sub1"><mat-icon>phone</mat-icon></div>
+      <div class="sub2">
+        <a routerLink="table" (click)="openDialog()">&nbsp; Contact</a>
+      </div>
+    </div>
+    <div class="main" style="display: flex">
+      <div class="sub1"><mat-icon>home</mat-icon></div>
+      <div class="sub2"><a routerLink="project"> &nbsp; Project</a></div>
+    </div>
+    <div class="main" style="display: flex">
+      <div class="sub1"><mat-icon>face</mat-icon></div>
+      <div class="sub2"><a routerLink="about"> &nbsp; About Me</a></div>
+    </div>
   </div>
-</mat-nav-list>
-
-
-  
-
-
+</div>
