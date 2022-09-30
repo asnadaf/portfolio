@@ -12,4 +12,5 @@ export class AppComponent {
   giveVal(){
     console.log('hello every one')
   }
+  
 }
